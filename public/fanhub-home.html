@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <style>
+   @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+  </style>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script id="tailwind-config">
+   tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#e5e2e3","inverse-primary":"#c0000c","surface-container-low":"#1c1b1c","on-surface-variant":"#e9bcb6","background":"#131314","on-primary":"#690003","on-secondary-fixed":"#410002","surface-container-highest":"#353436","primary-fixed-dim":"#ffb4aa","on-surface":"#e5e2e3","on-secondary-container":"#ffc8c1","surface-container-lowest":"#0e0e0f","on-error-container":"#ffdad6","on-secondary":"#690005","surface-variant":"#353436","on-error":"#690005","error":"#ffb4ab","error-container":"#93000a","on-tertiary-container":"#f8f9ff","on-tertiary":"#003061","inverse-surface":"#e5e2e3","secondary-fixed-dim":"#ffb4ab","secondary":"#ffb4ab","surface-dim":"#131314","surface-container":"#201f20","inverse-on-surface":"#313031","primary":"#ffb4aa","surface-container-high":"#2a2a2b","outline-variant":"#5e3f3b","surface":"#131314","on-primary-fixed":"#410001","on-primary-container":"#fff7f6","tertiary-fixed-dim":"#a7c8ff","secondary-fixed":"#ffdad6","tertiary-fixed":"#d5e3ff","surface-tint":"#ffb4aa","on-secondary-fixed-variant":"#93000b","on-tertiary-fixed":"#001b3c","on-tertiary-fixed-variant":"#004689","on-primary-fixed-variant":"#930007","tertiary-container":"#0072d7","primary-container":"#e50914","surface-bright":"#3a393a","secondary-container":"#bb0112","primary-fixed":"#ffdad5","outline":"#af8782","tertiary":"#a7c8ff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","space-sm":"0.5rem","gutter-mobile":"0.75rem",gutter:"1.5rem","space-md":"1rem",margin:"3rem","margin-mobile":"1rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Outfit"],"body-md":["Inter"],"display-hero-mobile":["Outfit"],"label-badge":["Outfit"],"display-hero":["Outfit"],"headline-md":["Outfit"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Outfit"],"body-sm":["Inter"],"title-md":["Inter"],"headline-lg-mobile":["Outfit"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-badge":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}}
+  </script>
+  <style id="fanhub-final-polish">
+   html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 78% -12%,rgba(229,9,20,.09),transparent 32%),#131314}
+.fh-logo-mark{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,#ff3a42,#a90008);box-shadow:0 0 22px rgba(229,9,20,.28);color:#fff;font:800 13px/1 Outfit,Inter,sans-serif;letter-spacing:-.03em}
+header{box-shadow:0 12px 44px rgba(0,0,0,.23)}
+article,.group,.rounded-lg{transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+article:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(0,0,0,.28)}
+article img{transition:transform .5s cubic-bezier(.2,.7,.2,1),filter .3s ease}
+article:hover img{transform:scale(1.025);filter:saturate(1.06)}
+button,a{transition:transform .18s ease,color .18s ease,background-color .18s ease,border-color .18s ease,box-shadow .18s ease}
+button:active,a:active{transform:scale(.98)}
+main section{scroll-margin-top:100px}
+footer{position:relative;overflow:hidden;background:linear-gradient(180deg,#0e0e0f,#0a0a0b)!important}
+footer::before{content:"";position:absolute;right:-180px;top:-220px;width:650px;height:420px;background:radial-gradient(circle,rgba(229,9,20,.12),transparent 67%);pointer-events:none}
+footer>div{position:relative}
+.fh-reveal{opacity:0;transform:translateY(18px)}
+.fh-reveal.fh-visible{opacity:1;transform:none;transition:opacity .58s ease,transform .58s cubic-bezier(.2,.7,.2,1)}
+#fh-back-top{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border-radius:10px;background:#e50914;color:#fff;border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;z-index:70;box-shadow:0 15px 36px rgba(0,0,0,.35);opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s ease}
+#fh-back-top.fh-show{opacity:1;pointer-events:auto;transform:none}
+#fh-back-top:hover{background:#ff2b34}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fh-reveal,.fh-reveal.fh-visible{opacity:1;transform:none;transition:none}article img,article,button,a{transition:none}}
+  </style>
+ </head>
+ <body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container-high">
+   <div class="h-20 w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin flex flex-col justify-between">
+    <div class="flex items-center justify-between h-12 pt-2">
+     <div class="flex items-center gap-space-lg">
+      <a class="flex items-center gap-space-sm group" data-path="explore" href="#">
+       <span aria-hidden="true" class="fh-logo-mark">
+        F+
+       </span>
+       <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface group-hover:text-primary-container transition-colors">
+        Fan Hub
+        <span class="text-primary-container">
+         +
+        </span>
+       </span>
+      </a>
+      <div class="hidden xl:flex items-center relative w-72">
+       <span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">
+        search
+       </span>
+       <input class="w-full bg-surface-container-low border border-surface-container-high rounded text-on-surface placeholder:text-outline text-body-sm font-body-sm pl-9 pr-12 py-1.5 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search universes, characters..." type="text"/>
+       <kbd class="absolute right-2 px-1.5 py-0.5 text-[10px] font-label-badge text-outline border border-surface-container-high rounded bg-surface-container-lowest">
+        ⌘K
+       </kbd>
+      </div>
+     </div>
+     <div class="flex items-center gap-space-md">
+      <button class="hidden sm:flex items-center gap-space-xs px-3 py-1.5 rounded border border-surface-container-high bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant font-label-md text-label-md transition-all shadow-[0_0_12px_-3px_rgba(229,9,20,0.3)]" type="button">
+       <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse">
+       </span>
+       <span>
+        AI Guide
+       </span>
+      </button>
+      <button aria-label="Saved Bookmarks" class="relative p-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+       <span class="material-symbols-outlined text-[20px]">
+        bookmark
+       </span>
+       <span class="absolute top-1 right-1 px-1 min-w-[14px] h-[14px] rounded-full bg-surface-container-highest border border-surface-container-high text-[9px] font-label-badge text-on-surface flex items-center justify-center leading-none">
+        12
+       </span>
+      </button>
+      <button aria-label="Notifications" class="relative p-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+       <span class="material-symbols-outlined text-[20px]">
+        notifications
+       </span>
+       <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container">
+       </span>
+      </button>
+      <div class="relative flex items-center pl-2 border-l border-surface-container-high">
+       <div class="relative">
+        <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM_2foOgLCwI6g5depMq0nmijkeNTumDhIxswkumg7E4hOMsN6I36d5SX_6asAXEAkqOaLAUxqlfIbUWFjnw7bCyBZfmgXcTHCeBv8bbixcviEctBy319AQ6sAojLiyxT-QjPoKgsUTiBWdmiFA63PYRn6yWOZd2MTwoqcJ_009s_Q5S2YqZzP6Y7lktKaA3yrfi6SfrYGz5fndUdhI4P2xnGXkV6AkeITQJ2UFX4"/>
+        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest" title="Active">
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <nav class="flex items-center gap-space-md overflow-x-auto h-8 text-label-md font-label-md" data-active-classes="text-on-surface font-semibold border-b-2 border-primary-container bg-surface-container-high/40">
+     <a aria-current="page" class="px-2 py-1 transition-colors whitespace-nowrap text-on-surface font-semibold border-b-2 border-primary-container bg-surface-container-high/40" data-path="explore" href="#">
+      Explore
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="anime" href="#">
+      Anime
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="gaming" href="#">
+      Gaming
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="movies-and-tv" href="#">
+      Movies &amp; TV
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="k-pop" href="#">
+      K-Pop
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="comics-and-manga" href="#">
+      Comics &amp; Manga
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="cosplay" href="#">
+      Cosplay
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="events-calendar" href="#">
+      Events
+     </a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="audio-dispatch" href="#">
+  Songs
+</a>
+     <a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-2 py-1 transition-colors whitespace-nowrap" data-path="merch-showcase" href="#">
+      Merch Showcase
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="w-full pt-20 bg-background min-h-screen">
+   <div class="flex flex-col w-full">
+    <div class="relative w-full overflow-hidden">
+     <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[280px] bg-primary-container/10 rounded-full blur-[120px] pointer-events-none">
+     </div>
+     <div class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin pt-6 pb-4">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 p-4 rounded-xl bg-surface-container-low shadow-sm">
+       <div class="flex items-center gap-3">
+        <div class="relative flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-high text-primary-container">
+         <span class="material-symbols-outlined text-[24px]">
+          terminal
+         </span>
+         <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse">
+         </span>
+        </div>
+        <div>
+         <div class="flex items-center gap-2">
+          <span class="font-headline-sm text-headline-sm text-on-surface">
+           Welcome back, Elena Vance
+          </span>
+          <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface-variant">
+           Archivist Lvl 4
+          </span>
+         </div>
+         <p class="font-body-sm text-body-sm text-outline">
+          Omni-Link Session Active • 14 Nodes Synchronized across 6 universes
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-wrap items-center gap-3">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container">
+         <span class="material-symbols-outlined text-primary-container text-[18px]">
+          hub
+         </span>
+         <span class="font-label-md text-label-md text-on-surface">
+          <strong class="text-on-surface font-semibold">
+           6
+          </strong>
+          Fandoms
+         </span>
+        </div>
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container">
+         <span class="material-symbols-outlined text-primary-container text-[18px]">
+          bookmark
+         </span>
+         <span class="font-label-md text-label-md text-on-surface">
+          <strong class="text-on-surface font-semibold">
+           24
+          </strong>
+          Bookmarks
+         </span>
+        </div>
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container">
+         <span class="material-symbols-outlined text-primary-container text-[18px]">
+          event
+         </span>
+         <span class="font-label-md text-label-md text-on-surface">
+          <strong class="text-on-surface font-semibold">
+           12
+          </strong>
+          Events
+         </span>
+        </div>
+        <div class="h-6 w-[1px] bg-surface-container-highest hidden sm:block">
+        </div>
+        <button class="px-3.5 py-1.5 rounded text-label-md font-label-md bg-primary-container text-on-primary-container hover:bg-secondary-container transition-all flex items-center gap-1.5 shadow-sm">
+         <span class="material-symbols-outlined text-[16px]">
+          sync
+         </span>
+         <span>
+          Sync Feeds
+         </span>
+        </button>
+       </div>
+      </div>
+      <div class="flex items-center gap-3 mt-3 overflow-x-auto py-1 text-label-md font-label-md">
+       <span class="text-outline uppercase text-[10px] tracking-wider whitespace-nowrap font-bold flex items-center gap-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping">
+        </span>
+        Live Radar:
+       </span>
+       <div class="flex items-center gap-2">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface whitespace-nowrap flex items-center gap-1.5">
+         <span class="text-primary-container font-bold">
+          #1 Anime
+         </span>
+         Solo Leveling S2 (+34k)
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-low text-outline whitespace-nowrap hover:text-on-surface transition-colors">
+         <strong class="text-on-surface">
+          #2 Gaming
+         </strong>
+         Elden Ring Nightreign DLC
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-low text-outline whitespace-nowrap hover:text-on-surface transition-colors">
+         <strong class="text-on-surface">
+          #3 Cinema
+         </strong>
+         Dune Part Three Script Lock
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-low text-outline whitespace-nowrap hover:text-on-surface transition-colors">
+         <strong class="text-on-surface">
+          #4 K-Pop
+         </strong>
+         Aespa Quantum World Tour
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-low text-outline whitespace-nowrap hover:text-on-surface transition-colors">
+         <strong class="text-on-surface">
+          #5 Comics
+         </strong>
+         Chainsaw Man Ch. 182 Breakdown
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container-low text-outline whitespace-nowrap hover:text-on-surface transition-colors">
+         <strong class="text-on-surface">
+          #6 Cosplay
+         </strong>
+         Anime Expo Armor Build Comp
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin pt-2 pb-8">
+      <div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl">
+       <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
+        <div class="lg:col-span-7 relative min-h-[300px] lg:min-h-full">
+         <div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic high contrast futuristic night scene from Cyberpunk universe, neon rain reflected on asphalt, razor-sharp red holographic data rings hovering over a mercenary figure standing in front of high-tech mega skyscraper architecture with glowing red and charcoal tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBlEMdhcWpf81SKnZEg2EcjsOFf8Jmrz24IcUV-94Il8_5-jZ8xhGQsq2zwEMBcujqxZOJofyiM2S5iSQCyReKGUpNSs8ITia7601qtVFtpFrpYkhyGpPvLI9ha5jyjoeDhZalN0hnZxRZi0jWzOzzn07YvpQzxV6ZDRYSEIHjkHe1N3Ryn0eXHHmxuAFMr8xFz1SVWhtOmW3ITuPQa4jx1FlJtYCeZkEijFol5NU')">
+         </div>
+         <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-background via-surface-container-low/70 to-transparent">
+         </div>
+         <div class="absolute top-4 left-4 flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-primary-container text-on-primary-container shadow-sm flex items-center gap-1.5">
+           <span class="material-symbols-outlined text-[14px]">
+            local_fire_department
+           </span>
+           Omniverse Spotlight
+          </span>
+          <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 backdrop-blur-md text-on-surface">
+           Cyberpunk 2077 × Edgerunners
+          </span>
+         </div>
+         <div class="absolute bottom-4 left-4 flex items-center gap-3">
+          <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-on-surface hover:text-primary-container transition-all">
+           <span class="material-symbols-outlined text-primary-container text-[18px]">
+            play_circle
+           </span>
+           <span class="font-label-md text-label-md">
+            Play 4K Trailer Stream
+           </span>
+          </button>
+          <div class="px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md font-label-badge text-label-badge text-on-surface-variant flex items-center gap-1">
+           <span class="text-primary-container font-bold">
+            2160p
+           </span>
+           HDR10+
+          </div>
+         </div>
+        </div>
+        <div class="lg:col-span-5 p-6 lg:p-10 flex flex-col justify-between bg-surface-container-low">
+         <div>
+          <div class="flex items-center justify-between mb-3">
+           <div class="flex items-center gap-2 text-outline font-label-badge text-label-badge uppercase">
+            <span>
+             Vault ID #CP-8849
+            </span>
+            <span>
+             •
+            </span>
+            <span class="text-primary">
+             Curated Series Dossier
+            </span>
+           </div>
+           <button class="p-2 rounded hover:bg-surface-container-high text-outline hover:text-on-surface transition-colors" title="Quick Save to Codex">
+            <span class="material-symbols-outlined text-[20px]">
+             bookmark_add
+            </span>
+           </button>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-3 tracking-tight">
+           Night City Overdrive: Edgerunners &amp; Phantom Liberty Matrix
+          </h2>
+          <p class="font-body-md text-body-md text-outline mb-6">
+           Explore the verified canonical continuity, Sandevistan neurological load thresholds, and Dogtown political espionage files curated by leading cyber-archaeologists.
+          </p>
+          <div class="grid grid-cols-3 gap-3 mb-6 p-3 rounded-lg bg-surface-container">
+           <div>
+            <span class="font-label-badge text-label-badge uppercase text-outline block">
+             Rating
+            </span>
+            <div class="flex items-center gap-1 mt-0.5">
+             <span class="material-symbols-outlined text-primary-container text-[16px]">
+              star
+             </span>
+             <span class="font-title-md text-title-md text-on-surface">
+              4.9
+             </span>
+             <span class="font-body-sm text-body-sm text-outline">
+              /5
+             </span>
+            </div>
+           </div>
+           <div>
+            <span class="font-label-badge text-label-badge uppercase text-outline block">
+             Discussions
+            </span>
+            <div class="flex items-center gap-1 mt-0.5">
+             <span class="material-symbols-outlined text-on-surface-variant text-[16px]">
+              forum
+             </span>
+             <span class="font-title-md text-title-md text-on-surface">
+              1,842
+             </span>
+            </div>
+           </div>
+           <div>
+            <span class="font-label-badge text-label-badge uppercase text-outline block">
+             Archive Size
+            </span>
+            <div class="flex items-center gap-1 mt-0.5">
+             <span class="material-symbols-outlined text-on-surface-variant text-[16px]">
+              database
+             </span>
+             <span class="font-title-md text-title-md text-on-surface">
+              8.4 GB
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+          <a class="flex-1 px-5 py-3 rounded text-title-md font-title-md bg-primary-container text-on-primary-container hover:bg-secondary-container transition-all flex items-center justify-center gap-2 shadow-sm" href="#">
+           <span>
+            Enter Archive Node
+           </span>
+           <span class="material-symbols-outlined text-[18px]">
+            arrow_forward
+           </span>
+          </a>
+          <button class="px-4 py-3 rounded text-label-md font-label-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors flex items-center justify-center gap-2">
+           <span class="material-symbols-outlined text-[18px]">
+            share
+           </span>
+           <span>
+            Dispatch File
+           </span>
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <section class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin mb-8">
+     <div class="p-4 rounded-xl bg-surface-container-low shadow-sm">
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-4">
+       <button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md whitespace-nowrap flex items-center gap-2 shadow-sm">
+        <span>
+         All Fandoms
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest text-primary text-[10px] font-bold">
+         649
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         Anime
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         142
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         Gaming
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         98
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         Movies &amp; TV
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         164
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         K-Pop
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         76
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         Comics &amp; Manga
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         115
+        </span>
+       </button>
+       <button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors">
+        <span>
+         Cosplay
+        </span>
+        <span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-outline text-[10px]">
+         54
+        </span>
+       </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3 items-center">
+       <div class="lg:col-span-4 relative">
+        <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">
+         search
+        </span>
+        <input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm pl-10 pr-24 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-low transition-all" placeholder="Search across 649 dossiers, weapons, tags..." type="text"/>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-badge text-label-badge text-outline uppercase bg-surface-container px-1.5 py-0.5 rounded">
+         649 Hits
+        </span>
+       </div>
+       <div class="lg:col-span-2 relative">
+        <select class="w-full appearance-none bg-surface-container-lowest text-on-surface text-body-sm font-body-sm px-3.5 py-2.5 rounded-lg focus:outline-none cursor-pointer">
+         <option>
+          Genre: All Genres
+         </option>
+         <option>
+          Cyberpunk / Sci-Fi
+         </option>
+         <option>
+          Dark Fantasy / Souls
+         </option>
+         <option>
+          Shonen / Action
+         </option>
+         <option>
+          Psychological Thriller
+         </option>
+         <option>
+          Avant-Garde / K-Pop Wave
+         </option>
+        </select>
+        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">
+         expand_more
+        </span>
+       </div>
+       <div class="lg:col-span-2 relative">
+        <select class="w-full appearance-none bg-surface-container-lowest text-on-surface text-body-sm font-body-sm px-3.5 py-2.5 rounded-lg focus:outline-none cursor-pointer">
+         <option>
+          Content: All Media
+         </option>
+         <option>
+          Lore Dossiers &amp; Articles
+         </option>
+         <option>
+          4K Video Breakdowns
+         </option>
+         <option>
+          Audio Logs &amp; Podcasts
+         </option>
+         <option>
+          Codex Character Profiles
+         </option>
+         <option>
+          Collector Exhibits
+         </option>
+        </select>
+        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">
+         expand_more
+        </span>
+       </div>
+       <div class="lg:col-span-2 relative">
+        <select class="w-full appearance-none bg-surface-container-lowest text-on-surface text-body-sm font-body-sm px-3.5 py-2.5 rounded-lg focus:outline-none cursor-pointer">
+         <option>
+          Era: 2024 - 2025 Current
+         </option>
+         <option>
+          Era: 2020 - 2023 Wave
+         </option>
+         <option>
+          Era: Retro Archive (Pre-2010)
+         </option>
+         <option>
+          Era: Unreleased / Upcoming
+         </option>
+        </select>
+        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">
+         expand_more
+        </span>
+       </div>
+       <div class="lg:col-span-2 relative">
+        <select class="w-full appearance-none bg-surface-container-lowest text-on-surface text-body-sm font-body-sm px-3.5 py-2.5 rounded-lg focus:outline-none cursor-pointer">
+         <option>
+          Sort: Trending Index
+         </option>
+         <option>
+          Sort: Most Popular
+         </option>
+         <option>
+          Sort: Latest Updates
+         </option>
+         <option>
+          Sort: Highest Rated
+         </option>
+         <option>
+          Sort: Alphabetical (A-Z)
+         </option>
+        </select>
+        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">
+         swap_vert
+        </span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin mb-12">
+     <div class="flex items-center justify-between mb-6">
+      <div>
+       <div class="flex items-center gap-2 mb-1">
+        <span class="w-2 h-2 rounded-full bg-primary-container">
+        </span>
+        <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">
+         Verified Lore &amp; Archives
+        </span>
+       </div>
+       <h3 class="font-headline-md text-headline-md text-on-surface">
+        Curated Universe Matrix
+       </h3>
+      </div>
+      <div class="flex items-center gap-2">
+       <span class="font-body-sm text-body-sm text-outline hidden sm:inline">
+        Displaying 6 of 649 active nodes
+       </span>
+       <button class="p-2 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[20px]">
+         grid_view
+        </span>
+       </button>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="High contrast anime illustration of Jinwoo from Solo Leveling summoning glowing purple and red shadow soldiers, surrounded by mystical dark energy wisps, cinematic rim lighting in deep black and vibrant crimson." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNhU1kFiEc45GDn2VhKMlvQeRMlNoNUUGKRJkRDmAT-_AHz53TNzJLmaZs1Kq72BUhmBlxlxed9PPCensH7Ea6A4oXu0fnqvKpLh7sOR9qjGfvVYUdiMAGGuSos7jzKzviBuTLsgvBkXrKz6P6oijFBOUtBfBTqenNLFUeNybCWQhlpdAIvKYia2Etg0fcMqrf-4Buh2LJBjGtI1TyfdVBcovsJ5Uzwkjz9Pqw8Ms')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-primary-container text-on-primary-container shadow-sm">
+          Anime Core
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Lore Dossier
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-outline hover:text-primary-container transition-colors" title="Bookmark Node">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           videocam
+          </span>
+          4K Preview
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           star
+          </span>
+          4.9 (18.4k)
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          Solo Leveling Universe
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Shadow Monarch Lineage &amp; Monarch Wars Breakdown
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Comprehensive genealogy of Ashborn, the Rulers' betrayal, and the dimensional architecture behind the System's creation.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            timer
+           </span>
+           14 min read
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            visibility
+           </span>
+           18.4k
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Dark fantasy landscape of the Lands Between in Elden Ring, showing the burning Scadutree glowing with eerie golden-red light against a charcoal sky, a tarnished knight kneeling in ruins." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-ihXeB3Z2VOsYIcCB_HH5yM--B77d92qeBhmlgs9TeQS5lDdtHHwf3noZyOSpljCUgj6tO0R5dIHZZwjmNFkxQDXxhnDPUy-JNoTTXpX6JJCx9QAtrtpqskFXwooDYLPwhmvnMHdm6SYlxQ7vMBA4jZQvgs9ZIIkHlUYd6HLX86V7NYh9f3MNtElCPRPdFcYJSItOBC9pH1x_lgeNeN8eJzsfvyaaXKelxyeAipg')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface">
+          Gaming Meta
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Boss Guides
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-outline hover:text-primary-container transition-colors" title="Bookmark Node">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           headphones
+          </span>
+          Audio Commentary
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           star
+          </span>
+          5.0 (42.1k)
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          FromSoftware • Elden Ring
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Shadow of the Erdtree: Consort Radahn &amp; Scadutree Scaling
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Frame-data breakdown, stagger mechanics, and optimal talisman synergy for NG+7 pure melee builds.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            touch_app
+           </span>
+           Interactive
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            visibility
+           </span>
+           42.1k
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic cyber-aesthetic stage production with holographic neon lighting, reflective metallic surfaces, high fashion idol aesthetic in dark sleek tones with sharp ruby and silver highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcgHRhgNjVWPbs4A3tvxeeYjFxQvWbyXYINNxvGGQkXTHhURQ4I2qabXAHBXMavdRPuPtGphuwbv4r7h2IN-xzTIbouuwweirW0TiKQtAE5xGPWwpkdwBoCI6F-e1gK8KSqrGp31JJ64aDKoTUhDOU5gsNHC_kbbLVWS1OaCmbb6y8qbmUzaOFh9An921k73f3Lhfl2l7QNylX5b9YwO_2hTAr7o7joqjGRr4R9IM')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface">
+          K-Pop Wave
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Concept Art
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-outline hover:text-primary-container transition-colors" title="Bookmark Node">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           graphic_eq
+          </span>
+          Audio Clip
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           favorite
+          </span>
+          9.8k
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          Visual Direction • SM/ADOR
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Aespa &amp; NewJeans: Hyperpop Worldbuilding &amp; Cyber Aesthetics
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Analysis of virtual avatar lore, Y2K retro-futuristic audio engineering, and CGI set fabrication methodologies.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            audiotrack
+           </span>
+           8 Audio Stems
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            photo_library
+           </span>
+           24 Stills
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Vast desert planetary landscape of Arrakis under twin suns, gigantic spice harvester enveloped by sandstorm, dark moody cinematic composition with deep charcoal silhouettes and orange-crimson glow." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZi7gp02Bm0sPyJ_jBLCH5xcvCafbyoRL2FFhsqgGaIpGfaFyr_tgiGnDnNuzn60h52osGV1ia67Ex_8Ogl89_JrAIVyg8o-8WMJijzk3QQeb_j67m45wRO3yGYS-fQ8Po75zp5_cR0RR7oPGeg7lARSCVHk7w8tVHNcONZcyGVfm3K2szg_0224xWnNuBQMjJEP68JlbIjOAK_NjI-4YRRWtBiKZ-MN0i3Nuk-GM')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface">
+          Cinema Vault
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Geopolitics
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-outline hover:text-primary-container transition-colors" title="Bookmark Node">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           timeline
+          </span>
+          Dynamic Map
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           star
+          </span>
+          4.9 (31.2k)
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          Dune Universe • Legendary
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Dune Part Two: Landsraad Feuds &amp; Sandworm Ecology
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Geopolitical analysis of the Spacing Guild monopolies, the Bene Gesserit breeding program, and Arrakis water conversion.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            menu_book
+           </span>
+           22 min read
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            visibility
+           </span>
+           31.2k
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Monochromatic gritty manga ink illustration style with stark red blood splatter accents, featuring a horned devil silhouette against a chaotic urban destruction background, stark contrast deep ink blacks and crimson." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgvXUJoNmr2Xrput_WXfABs57Zve6Q33KOM5bQgvPjiMUuv3qQEd7WJjyKXbltbn8FLD1SH7K9LQ5YQTCXqmOro7NFEbIPUkkLsDJtMuurCR58iKExYMgFi8eTrgjMrS7IufHfxAY56jja9Whgpu5iZbJWQ6uG-U_WPp5LRhgvHgbOH4Xb6UmYeig79upPOgz3P8JIGxCUyX8MDt3v5j1k_tFAtp4m4uhk19hX7gQ')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface">
+          Manga Archive
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Taxonomy
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary-container" title="Saved">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark_added
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           auto_stories
+          </span>
+          Ch. 180+
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           star
+          </span>
+          4.8 (15.7k)
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          Fujimoto Works • Shonen Jump
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Chainsaw Man: The Four Horsemen &amp; Primal Fear Taxonomy
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Structural classification of primal devils, reincarnation loops in Hell, and the true cost of public safety contracts.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            schedule
+           </span>
+           11 min read
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            visibility
+           </span>
+           15.7k
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+      <article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all group">
+       <div class="relative h-56 overflow-hidden">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Detailed cosplay workshop photography showing illuminated LED armor plate fabrication, high density EVA foam carved with sci-fi crests, metallic crimson lacquer finish under workbench spotlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCT6mWo5JW7hVj7HZVmELtLK7EJEWZVuTD6yZAWJm1ZBekUyJHY_drvmkBRXrX9Ho4MaT7BDtkkr_DVZduwBxtq8rLmFcudp4l5XLCYfoqapWHj7v24to4dMKu7-yZGHNCfm2EFO33H33EiepgVW8Pm8DCj-iPRgKCTlpOjkqmsIqzR4lounbPcFleG8Juk9-UbA07JyriIzQGtJsd3sulp88ciZwQTeoJsAPoozjk')">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent">
+        </div>
+        <div class="absolute top-3 left-3 flex items-center gap-2">
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-highest text-on-surface">
+          Cosplay Workshop
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge uppercase tracking-wider bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+          Blueprints
+         </span>
+        </div>
+        <button class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-outline hover:text-primary-container transition-colors" title="Bookmark Node">
+         <span class="material-symbols-outlined text-[18px]">
+          bookmark
+         </span>
+        </button>
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           photo_library
+          </span>
+          12 Hi-Res Photos
+         </span>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-primary-container text-[14px]">
+           star
+          </span>
+          4.9 (6.3k)
+         </span>
+        </div>
+       </div>
+       <div class="p-5 flex-1 flex flex-col justify-between">
+        <div>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline block mb-1">
+          HoYoverse • Crafting Guild
+         </span>
+         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
+          Honkai Star Rail &amp; Genshin: Electro Armor LED Rigging
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline line-clamp-2 mb-4">
+          Step-by-step schematic for micro-Arduino addressable RGB wiring, lightweight battery storage, and multi-layer thermochromic paint.
+         </p>
+        </div>
+        <div class="pt-3 flex items-center justify-between border-t border-surface-container">
+         <div class="flex items-center gap-3 text-body-sm font-body-sm text-outline">
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            build
+           </span>
+           Full Schematics
+          </span>
+          <span class="flex items-center gap-1">
+           <span class="material-symbols-outlined text-[16px]">
+            visibility
+           </span>
+           6.3k
+          </span>
+         </div>
+         <button class="p-2 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="Share Archival Record">
+          <span class="material-symbols-outlined text-[18px]">
+           share
+          </span>
+         </button>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin mb-12">
+     <div class="p-6 md:p-8 rounded-xl bg-surface-container-low shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+       <div>
+        <div class="flex items-center gap-2 mb-1">
+         <span class="material-symbols-outlined text-primary-container text-[18px]">
+          badge
+         </span>
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">
+          Archival Biographies
+         </span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">
+         Trending Character Codex
+        </h3>
+        <p class="font-body-sm text-body-sm text-outline">
+         Deep character psyches, power hierarchies, and historical alignments.
+        </p>
+       </div>
+       <div class="flex items-center gap-2">
+        <button class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+         <span>
+          Explore All 1,420 Figures
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          arrow_forward
+         </span>
+        </button>
+       </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+       <div class="p-4 rounded-lg bg-surface-container shadow-sm flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+        <div>
+         <div class="relative h-44 rounded-md overflow-hidden mb-3">
+          <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Close up dark anime portrait of Guts from Berserk wearing the Berserker armor, red glowing eye slits against absolute charcoal darkness and swirling smoke." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqLke2NOxyvNbIjCyst7vx5_6eeXOI8yPgEToynUyQ4CM_XX-cgIB4ZpD1itSS4FX52JIkRzL_RxLEWGFtE_3EchErBzk5_s1L6-qd4H-lRYPSEDFA1hRoyjYTqqVWyOB2j1v0HNeawW57fAUOSn3CjkY6R0srInKjPQ9O-24F_YjUk74xqWibLykvnuDx7NJfzGFuJoGGIxybr5ww9oGXJAvIU8elZR2oA8NLjVU')">
+          </div>
+          <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+           Manga / Dark Fantasy
+          </span>
+         </div>
+         <div class="flex items-center justify-between mb-1">
+          <h4 class="font-title-md text-title-md text-on-surface font-semibold">
+           Guts
+          </h4>
+          <span class="text-primary-container font-label-badge text-label-badge uppercase">
+           The Black Swordsman
+          </span>
+         </div>
+         <p class="font-body-sm text-body-sm text-outline italic mb-3">
+          "He who fights with monsters might take care lest he thereby become a monster."
+         </p>
+         <div class="space-y-1.5 text-body-sm font-body-sm text-outline mb-4">
+          <div class="flex justify-between">
+           <span>
+            Affiliation:
+           </span>
+           <span class="text-on-surface">
+            Band of the Falcon (Former)
+           </span>
+          </div>
+          <div class="flex justify-between">
+           <span>
+            Threat Index:
+           </span>
+           <span class="text-primary font-semibold">
+            Calamity Rank
+           </span>
+          </div>
+         </div>
+        </div>
+        <button class="w-full py-2 rounded bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1">
+         <span>
+          View Character Archive
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          chevron_right
+         </span>
+        </button>
+       </div>
+       <div class="p-4 rounded-lg bg-surface-container shadow-sm flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+        <div>
+         <div class="relative h-44 rounded-md overflow-hidden mb-3">
+          <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Dramatic stylized portrait of Jinx from Arcane, intense pink and crimson neon lighting, blue braided hair flying, intense expression against dark Zaun industrial pipes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3Fqhx-a1vBWX4RMryuZgYJyiZF5QTsh3D5r8T-kboB52nRpsCnU7V1oFTrs9Rq7OvrUQyBtxKwL7IJibNCaH-V9O3nUputR8v5LMRn_h_e0KhDtSk-aKSvk_ZXVRSwhW_tCwcBWFK2lfUGMPLTacva2juHF1rWJ1el7ldTLva25ZKeTG-EnkpV7doA2zoX2MwPzYlHSRoSQzEskE5bCxnK43ksTy9yykr1wZQwAc')">
+          </div>
+          <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+           Gaming / TV
+          </span>
+         </div>
+         <div class="flex items-center justify-between mb-1">
+          <h4 class="font-title-md text-title-md text-on-surface font-semibold">
+           Jinx (Powder)
+          </h4>
+          <span class="text-primary-container font-label-badge text-label-badge uppercase">
+           Loose Cannon
+          </span>
+         </div>
+         <p class="font-body-sm text-body-sm text-outline italic mb-3">
+          "I thought, maybe you could love me like you used to... even though I'm different."
+         </p>
+         <div class="space-y-1.5 text-body-sm font-body-sm text-outline mb-4">
+          <div class="flex justify-between">
+           <span>
+            Affiliation:
+           </span>
+           <span class="text-on-surface">
+            Zaun Undercity
+           </span>
+          </div>
+          <div class="flex justify-between">
+           <span>
+            Weapon Signature:
+           </span>
+           <span class="text-on-surface">
+            Fishbones &amp; Pow-Pow
+           </span>
+          </div>
+         </div>
+        </div>
+        <button class="w-full py-2 rounded bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1">
+         <span>
+          View Character Archive
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          chevron_right
+         </span>
+        </button>
+       </div>
+       <div class="p-4 rounded-lg bg-surface-container shadow-sm flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+        <div>
+         <div class="relative h-44 rounded-md overflow-hidden mb-3">
+          <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="High contrast anime artwork of Gojo Satoru from Jujutsu Kaisen, blindfold removed revealing glowing bright blue Six Eyes with crimson cursed energy aura swirling in dark void." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvxykXialEQFFoWEHO9E9kGyUl9K-wbq4myVjz__3BAftd6K1Wb1yXyYga4UL7rK0Dgl4gd7kqhv_28noYtP60tcnvzEeyBJUeutlCgMtVvdrInn6u9lCwD-FMLGNCklgw-r1GpzeL8DQrZCHL2mZ604mclxYeYGT-zbRWCUffURVG0R3TYfUtU0OsLvvXQeLsU3w8I_G3rOlhxURQmBbG8KGwgZvscyUUpJrL-cI')">
+          </div>
+          <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+           Anime / Jujutsu
+          </span>
+         </div>
+         <div class="flex items-center justify-between mb-1">
+          <h4 class="font-title-md text-title-md text-on-surface font-semibold">
+           Gojo Satoru
+          </h4>
+          <span class="text-primary-container font-label-badge text-label-badge uppercase">
+           Special Grade
+          </span>
+         </div>
+         <p class="font-body-sm text-body-sm text-outline italic mb-3">
+          "Throughout heaven and earth, I alone am the honored one."
+         </p>
+         <div class="space-y-1.5 text-body-sm font-body-sm text-outline mb-4">
+          <div class="flex justify-between">
+           <span>
+            Affiliation:
+           </span>
+           <span class="text-on-surface">
+            Tokyo Jujutsu High
+           </span>
+          </div>
+          <div class="flex justify-between">
+           <span>
+            Domain:
+           </span>
+           <span class="text-primary font-semibold">
+            Unlimited Void
+           </span>
+          </div>
+         </div>
+        </div>
+        <button class="w-full py-2 rounded bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1">
+         <span>
+          View Character Archive
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          chevron_right
+         </span>
+        </button>
+       </div>
+       <div class="p-4 rounded-lg bg-surface-container shadow-sm flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+        <div>
+         <div class="relative h-44 rounded-md overflow-hidden mb-3">
+          <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Stylized video game rendering of YoRHa No. 2 Type B from NieR Automata with black blindfold visor, silver hair, katana drawn in ruined overgrown city ruins with red laser pod targeting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjoVErf-pUlE8WPC3E_zcWsDpi8nfPvLXUOvCe_Mif5WULiIMhEr_PfUfrzgFnCwUaACXpZupq8TTwAvbkd1pRZtWxg3TM2wnB7yK4OJfshnSfWrhddcsql0Tod4XEn4ke8Bkee_pPk6GMNgF67nqjJp98Na0k7wXTp60OklGbnwSvdchFpRs-Os1It0dQl5XkrLeZOokIDziGZrXWVg6SDQz8JqM-BCe0OxCOEfY')">
+          </div>
+          <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest/80 text-on-surface backdrop-blur-md">
+           Gaming / Sci-Fi
+          </span>
+         </div>
+         <div class="flex items-center justify-between mb-1">
+          <h4 class="font-title-md text-title-md text-on-surface font-semibold">
+           YoRHa No. 2 Type B
+          </h4>
+          <span class="text-primary-container font-label-badge text-label-badge uppercase">
+           Battler Android
+          </span>
+         </div>
+         <p class="font-body-sm text-body-sm text-outline italic mb-3">
+          "Everything that lives is designed to end. We are perpetually trapped in a never-ending spiral."
+         </p>
+         <div class="space-y-1.5 text-body-sm font-body-sm text-outline mb-4">
+          <div class="flex justify-between">
+           <span>
+            Affiliation:
+           </span>
+           <span class="text-on-surface">
+            YoRHa Squad
+           </span>
+          </div>
+          <div class="flex justify-between">
+           <span>
+            Designation:
+           </span>
+           <span class="text-on-surface">
+            Execution Model (2E)
+           </span>
+          </div>
+         </div>
+        </div>
+        <button class="w-full py-2 rounded bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1">
+         <span>
+          View Character Archive
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          chevron_right
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin mb-12">
+     <div class="grid grid-cols-1 lg:grid-cols-15 gap-6">
+      <div class="lg:col-span-8 p-6 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+       <div>
+        <div class="flex items-center justify-between mb-4">
+         <div class="flex items-center">
+          <span class="material-symbols-outlined text-primary-container text-[20px]">
+           smart_display
+          </span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">
+           Multimedia Theater • Live Terminal
+          </h3>
+         </div>
+         <span class="px-2 py-0.5 rounded text-label-badge font-label-badge bg-primary-container/20 text-primary-fixed border border-primary-container/30 uppercase">
+          IMAX
+         </span>
+        </div>
+       <div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-lowest">
+  <iframe
+    width="100%"
+    height="100%"
+    src="https://www.youtube.com/embed/o97Ph_1ECD0"
+    title="YouTube Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+<div
+  class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-surface-container-lowest/10 transition-colors">
+</div>
+         <div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-surface-container-lowest/10 transition-colors">
+         </div>
+         <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[36px] ml-1">
+           play_arrow
+          </span>
+         </button>
+         <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+          <div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mb-3 cursor-pointer">
+           <div class="w-3/5 h-full bg-primary-container relative">
+            <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-on-primary-container shadow-md">
+            </span>
+           </div>
+          </div>
+          <div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+           <div class="flex items-center gap-3">
+            <button class="hover:text-primary-container transition-colors">
+             <span class="material-symbols-outlined text-[20px]">
+              pause
+             </span>
+            </button>
+            <button class="hover:text-primary-container transition-colors">
+             <span class="material-symbols-outlined text-[20px]">
+              volume_up
+             </span>
+            </button>
+            <span class="font-label-badge text-label-badge text-outline">
+             03:42 / 05:58
+            </span>
+           </div>
+           <div class="flex items-center gap-3">
+            <span class="px-1.5 py-0.5 rounded bg-surface-container text-[10px] font-label-badge">
+             4K ULTRA HD
+            </span>
+            <button class="hover:text-primary-container transition-colors">
+             <span class="material-symbols-outlined text-[20px]">
+              closed_caption
+             </span>
+            </button>
+            <button class="hover:text-primary-container transition-colors">
+             <span class="material-symbols-outlined text-[20px]">
+              settings
+             </span>
+            </button>
+            <button class="hover:text-primary-container transition-colors">
+             <span class="material-symbols-outlined text-[20px]">
+              fullscreen
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+
+      </div>
+      <div class="lg:col-span-4 p-6 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+       <div>
+        <div class="flex items-center justify-between mb-4">
+         <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary-container text-[20px]">
+           podcasts
+          </span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">
+           Audio Dispatch
+          </h3>
+         </div>
+         <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" title="Feed Live">
+         </span>
+        </div>
+        <div class="p-4 rounded-lg bg-surface-container mb-4">
+         <span class="font-label-badge text-label-badge uppercase tracking-wider text-primary block mb-1">
+          Episode #148 • Omniverse Cast
+         </span>
+         <h4 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">
+          The Architecture of Souls: Miyazaki's Narrative Secrets
+         </h4>
+         <p class="font-body-sm text-body-sm text-outline mb-4">
+          Roundtable audio analysis with senior Souls lorekeepers dissecting environmental storytelling in Elden Ring and Bloodborne.
+         </p>
+        <audio
+  controls
+  style="width: 100%; margin-top: 12px;"
+  src="/audio/let-me-love-you.mp3">
+</audio>
+        <div class="space-y-2">
+         <div class="p-2.5 rounded bg-surface-container/60 hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors">
+          <div class="flex items-center gap-2">
+           <span class="material-symbols-outlined text-outline text-[18px]">
+            music_note
+           </span>
+           <span class="font-body-sm text-body-sm text-on-surface">
+            NieR Automata: Weight of the World (8D Stems)
+           </span>
+          </div>
+          <span class="font-label-badge text-label-badge text-outline">
+           05:41
+          </span>
+         </div>
+         <div class="p-2.5 rounded bg-surface-container/60 hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors">
+          <div class="flex items-center gap-2">
+           <span class="material-symbols-outlined text-outline text-[18px]">
+            mic
+           </span>
+           <span class="font-body-sm text-body-sm text-on-surface">
+            Voice Actor Spotlight: Kenjiro Tsuda as Nanami
+           </span>
+          </div>
+          <span class="font-label-badge text-label-badge text-outline">
+           32:05
+          </span>
+         </div>
+        </div>
+       </div>
+       <button class="w-full mt-4 py-2.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+        <span class="material-symbols-outlined text-[16px]">
+         library_music
+        </span>
+        <span>
+         Open Full Audio Archive
+        </span>
+       </button>
+      </div>
+     </div>
+    </section>
+    <section class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin mb-12">
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div class="lg:col-span-6 p-6 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+       <div>
+        <div class="flex items-center justify-between mb-4">
+         <div>
+          <div class="flex items-center gap-2 mb-1">
+           <span class="material-symbols-outlined text-primary-container text-[18px]">
+            calendar_month
+           </span>
+           <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">
+            Temporal Dispatch
+           </span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">
+           Upcoming Release Horizon
+          </h3>
+         </div>
+         <a class="font-label-md text-label-md text-primary hover:underline" href="#">
+          Full 2025 Calendar
+         </a>
+        </div>
+        <div class="space-y-3">
+         <div class="p-3.5 rounded-lg bg-surface-container flex items-start gap-3.5 hover:bg-surface-container-high transition-colors">
+          <div class="flex flex-col items-center justify-center min-w-[52px] h-[52px] rounded bg-surface-container-highest text-center">
+           <span class="font-label-badge text-[10px] text-primary-container uppercase font-bold">
+            OCT
+           </span>
+           <span class="font-headline-sm text-headline-sm leading-none text-on-surface">
+            14
+           </span>
+          </div>
+          <div class="flex-1 min-w-0">
+           <div class="flex items-center gap-2 mb-0.5">
+            <span class="px-1.5 py-0.2 rounded text-[10px] font-label-badge uppercase bg-primary-container/20 text-primary">
+             Anime Premiere
+            </span>
+            <span class="text-outline text-body-sm font-body-sm">
+             • Global Simultaneous
+            </span>
+           </div>
+           <h4 class="font-title-md text-title-md text-on-surface truncate">
+            Chainsaw Man: Reze Arc Movie Theatrical Drop
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline truncate">
+            MAPPA Studios theatrical worldwide premiere in IMAX.
+           </p>
+          </div>
+          <button class="p-2 text-outline hover:text-primary transition-colors" title="Set Calendar Alert">
+           <span class="material-symbols-outlined text-[20px]">
+            notification_add
+           </span>
+          </button>
+         </div>
+         <div class="p-3.5 rounded-lg bg-surface-container flex items-start gap-3.5 hover:bg-surface-container-high transition-colors">
+          <div class="flex flex-col items-center justify-center min-w-[52px] h-[52px] rounded bg-surface-container-highest text-center">
+           <span class="font-label-badge text-[10px] text-primary-container uppercase font-bold">
+            NOV
+           </span>
+           <span class="font-headline-sm text-headline-sm leading-none text-on-surface">
+            02
+           </span>
+          </div>
+          <div class="flex-1 min-w-0">
+           <div class="flex items-center gap-2 mb-0.5">
+            <span class="px-1.5 py-0.2 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest text-on-surface">
+             Convention
+            </span>
+            <span class="text-outline text-body-sm font-body-sm">
+             • Los Angeles, CA
+            </span>
+           </div>
+           <h4 class="font-title-md text-title-md text-on-surface truncate">
+            Anime Expo Chibi 2024 &amp; Cosplay Grand Prix
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline truncate">
+            Official Fan Hub Plus archival booth #402 live stream panels.
+           </p>
+          </div>
+          <button class="p-2 text-outline hover:text-primary transition-colors" title="Set Calendar Alert">
+           <span class="material-symbols-outlined text-[20px]">
+            notification_add
+           </span>
+          </button>
+         </div>
+         <div class="p-3.5 rounded-lg bg-surface-container flex items-start gap-3.5 hover:bg-surface-container-high transition-colors">
+          <div class="flex flex-col items-center justify-center min-w-[52px] h-[52px] rounded bg-surface-container-highest text-center">
+           <span class="font-label-badge text-[10px] text-primary-container uppercase font-bold">
+            DEC
+           </span>
+           <span class="font-headline-sm text-headline-sm leading-none text-on-surface">
+            09
+           </span>
+          </div>
+          <div class="flex-1 min-w-0">
+           <div class="flex items-center gap-2 mb-0.5">
+            <span class="px-1.5 py-0.2 rounded text-[10px] font-label-badge uppercase bg-surface-container-lowest text-on-surface">
+             Gaming Release
+            </span>
+            <span class="text-outline text-body-sm font-body-sm">
+             • Steam / PS5 / Xbox
+            </span>
+           </div>
+           <h4 class="font-title-md text-title-md text-on-surface truncate">
+            Monster Hunter Wilds Beta Benchmark Event
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline truncate">
+            Capcom community hunting trials with cross-platform lobbies.
+           </p>
+          </div>
+          <button class="p-2 text-outline hover:text-primary transition-colors" title="Set Calendar Alert">
+           <span class="material-symbols-outlined text-[20px]">
+            notification_add
+           </span>
+          </button>
+         </div>
+        </div>
+       </div>
+       <div class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between">
+        <span class="font-body-sm text-body-sm text-outline">
+         Local Timezone: UTC-8 (Pacific Standard)
+        </span>
+        <button class="font-label-md text-label-md text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
+         <span class="material-symbols-outlined text-[16px]">
+          file_download
+         </span>
+         Export iCal
+        </button>
+       </div>
+      </div>
+      <div class="lg:col-span-6 p-6 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+       <div>
+        <div class="flex items-center justify-between mb-4">
+         <div>
+          <div class="flex items-center gap-2 mb-1">
+           <span class="material-symbols-outlined text-primary-container text-[18px]">
+            diamond
+           </span>
+           <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">
+            Collector Exhibit
+           </span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">
+           Collector's Vault Showcase
+          </h3>
+         </div>
+         <span class="px-2.5 py-1 rounded text-label-badge font-label-badge uppercase bg-surface-container-highest text-on-surface-variant">
+          Display &amp; Discovery Only
+         </span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+         <div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between group">
+          <div>
+           <div class="relative h-28 rounded overflow-hidden mb-2">
+            <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="High precision collector 1/6 scale statue of Malenia from Elden Ring with immaculate chrome winged helm, prosthetic gold blade, and detailed sculpted scarlet rot petals under studio light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9BI7h_eIPxHk6cI0Wb7LS1YEwLG4qlYPv2h3ODbESHQJIseikO6yFn6QSGhoUceHSTfqBMTS1V8Rv99PPfLwB6jJ_Asf0u8J7hzFpW_J7iiUuPOi8_uEG6IAQaVLA0rnvwVBgyDCQp_lZRtRLnrckOCFJhUHCcH4eI8e4H3tAEtxJWzT-IZ5pzNsVc39pAb04RCzfKwQvxN2iG2wfBPTuHc26z7Jbp8gIPu9bbbg')">
+            </div>
+            <span class="absolute top-1 left-1 px-1.5 py-0.2 rounded text-[9px] font-label-badge bg-surface-container-lowest/80 text-on-surface">
+             1/6 Statue
+            </span>
+           </div>
+           <h4 class="font-label-md text-label-md text-on-surface font-semibold truncate">
+            Malenia Blade of Miquella
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline">
+            PureArts Ltd 500 pcs
+           </p>
+          </div>
+          <div class="mt-2 pt-2 border-t border-surface-container-high flex items-center justify-between">
+           <span class="font-label-badge text-label-badge text-primary">
+            Catalog #992
+           </span>
+           <button class="text-outline hover:text-on-surface text-[14px]">
+            <span class="material-symbols-outlined text-[16px]">
+             info
+            </span>
+           </button>
+          </div>
+         </div>
+         <div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between group">
+          <div>
+           <div class="relative h-28 rounded overflow-hidden mb-2">
+            <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Deluxe triple vinyl soundtrack box set for Cyberpunk Edgerunners with vivid yellow and red gatefold sleeve, etched audio records, dark minimalist presentation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0g5-9NEx03sWvtrUBLvXWYQ6pTQLnaShTO4YEjTXkkcTHosMjAK0xJei9my2whmVHaOYcrJumF9nZ4eA-VMo2T7S9fCYHnwLc5rVlf-bElm7-LlPQBuebbMqp_xGGpOkcoG93zi9qN3-SpREayX1ovXV0lkcFev7j77ctWVDNHkWkACIWH1153QsoAbPbhzv9MTWYxUCHBwudi8fbD1J79JfWWd71turxdjPPJZQ')">
+            </div>
+            <span class="absolute top-1 left-1 px-1.5 py-0.2 rounded text-[9px] font-label-badge bg-surface-container-lowest/80 text-on-surface">
+             Vinyl OST
+            </span>
+           </div>
+           <h4 class="font-label-md text-label-md text-on-surface font-semibold truncate">
+            Edgerunners OST 3xLP
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline">
+            Laced Records Deluxe
+           </p>
+          </div>
+          <div class="mt-2 pt-2 border-t border-surface-container-high flex items-center justify-between">
+           <span class="font-label-badge text-label-badge text-primary">
+            Catalog #418
+           </span>
+           <button class="text-outline hover:text-on-surface text-[14px]">
+            <span class="material-symbols-outlined text-[16px]">
+             info
+            </span>
+           </button>
+          </div>
+         </div>
+         <div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between group">
+          <div>
+           <div class="relative h-28 rounded overflow-hidden mb-2">
+            <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Die-cast metal replica prop of the Sandevistan spinal cyberware implant from Cyberpunk with glowing red optic fiber details on a high tech matte black display stand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaTCUV3w6subQuyH2uoGzonPX5XfBhIeH4DbIT-DmYcmzm2HJqoRNOEWBQzINF9vrjX9ZTLVcrJn1iikji07_DByGXW5m75clO8C3dMhxiSS7Sd3hooX1Z96eWdq-zqxtoPx6paiIxZaiNwAUozl4WQxs8hbMzkM-rVaSa1y5Ifl3mBwmcBNurzdVLnOXAKJ2NhvsEBEkdxj2dQ6b77Cp3xhM6laZrfBwtTj6zKbk')">
+            </div>
+            <span class="absolute top-1 left-1 px-1.5 py-0.2 rounded text-[9px] font-label-badge bg-surface-container-lowest/80 text-on-surface">
+             Prop Replica
+            </span>
+           </div>
+           <h4 class="font-label-md text-label-md text-on-surface font-semibold truncate">
+            Militech Sandevistan 500
+           </h4>
+           <p class="font-body-sm text-body-sm text-outline">
+            1:1 Scale LED Prop
+           </p>
+          </div>
+          <div class="mt-2 pt-2 border-t border-surface-container-high flex items-center justify-between">
+           <span class="font-label-badge text-label-badge text-primary">
+            Catalog #102
+           </span>
+           <button class="text-outline hover:text-on-surface text-[14px]">
+            <span class="material-symbols-outlined text-[16px]">
+             info
+            </span>
+           </button>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between">
+        <p class="font-body-sm text-body-sm text-outline italic">
+         Non-transactional archival record. Purely for fandom exploration.
+        </p>
+        <button class="font-label-md text-label-md text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
+         <span>
+          Explore 480 Vault Items
+         </span>
+         <span class="material-symbols-outlined text-[16px]">
+          arrow_forward
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    
+    <script>
+     (function initFanHubInteractions() {
+      // AI input interaction
+      const aiBtn = document.getElementById('ai-submit-btn');
+      const aiInput = document.getElementById('ai-query-input');
+      
+      if (aiBtn && aiInput) {
+        aiBtn.addEventListener('click', () => {
+          if (!aiInput.value.trim()) return;
+          const orig = aiInput.value;
+          aiInput.value = 'Oracle Synthesizing: "' + orig + '"...';
+          aiInput.disabled = true;
+          setTimeout(() => {
+            aiInput.value = 'Response verified from Codex. 3 canonical archives found.';
+            aiInput.disabled = false;
+          }, 900);
+        });
+      }
+
+      // Bookmark button toggling micro-interaction
+      document.querySelectorAll('button[title*="Bookmark"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const icon = btn.querySelector('.material-symbols-outlined');
+          if (icon) {
+            if (icon.textContent === 'bookmark') {
+              icon.textContent = 'bookmark_added';
+              btn.classList.add('text-primary-container');
+            } else {
+              icon.textContent = 'bookmark';
+              btn.classList.remove('text-primary-container');
+            }
+          }
+        });
+      });
+    })();
+    </script>
+   </div>
+  </main>
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container-high pt-space-xl pb-space-lg text-on-surface-variant">
+   <div class="w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter lg:px-margin">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-space-lg mb-space-xl">
+     <div class="col-span-2">
+      <div class="flex items-center gap-space-sm mb-space-sm">
+       <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">
+        Fan Hub
+        <span class="text-primary-container">
+         +
+        </span>
+       </span>
+      </div>
+      <p class="font-body-sm text-body-sm text-outline max-w-sm mb-space-md">
+       Curated premium fandom portals, multimedia archives, interactive universe timelines, and collector exhibits.
+      </p>
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-low border border-surface-container-high">
+       <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping">
+       </span>
+       <span class="font-label-badge text-label-badge text-on-surface uppercase">
+        Omni-Node Systems Nominal
+       </span>
+      </div>
+     </div>
+     <div>
+      <h4 class="font-label-badge text-label-badge uppercase text-on-surface tracking-wider mb-space-md">
+       Core Portals
+      </h4>
+      <ul class="space-y-2 font-body-sm text-body-sm">
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="explore" href="#">
+         Overview
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="category-browse" href="#">
+         Category Browse
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="multimedia-center" href="#">
+         Multimedia Center
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="events-calendar" href="#">
+         Events Calendar
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-label-badge text-label-badge uppercase text-on-surface tracking-wider mb-space-md">
+       Fandom Vaults
+      </h4>
+      <ul class="space-y-2 font-body-sm text-body-sm">
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="anime" href="#">
+         Anime Core
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="gaming" href="#">
+         Gaming Arenas
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="comics-and-manga" href="#">
+         Manga Archives
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="merch-showcase" href="#">
+         Merch Showcase
+        </a>
+        
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-label-badge text-label-badge uppercase text-on-surface tracking-wider mb-space-md">
+       Governance
+      </h4>
+      <ul class="space-y-2 font-body-sm text-body-sm">
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="community-guidelines" href="#">
+         Community Rules
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" data-path="admin-panel" href="#">
+         Admin Panel
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" href="#">
+         API Protocol
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-on-surface transition-colors" href="#">
+         Creator Licensing
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-label-badge text-label-badge uppercase text-on-surface tracking-wider mb-space-md">
+       Interface
+      </h4>
+      <ul class="space-y-2 font-body-sm text-body-sm">
+       <li class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[14px] text-primary-container">
+         terminal
+        </span>
+        <span>
+         Release 3.4.1
+        </span>
+       </li>
+       <li class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[14px] text-outline">
+         dark_mode
+        </span>
+        <span>
+         Deep Matte
+        </span>
+       </li>
+       <li class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[14px] text-outline">
+         speed
+        </span>
+        <span>
+         18ms Latency
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="pt-space-md border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline">
+     <p>
+      © Fan Hub Plus / Aptech Limited. All rights reserved.
+     </p>
+     <div class="flex items-center gap-space-lg text-body-sm">
+      <span>
+       Curated for Enthusiasts Worldwide
+      </span>
+      <div class="flex items-center gap-1">
+       <span class="w-1.5 h-1.5 rounded-full bg-primary-container">
+       </span>
+       <span class="font-label-badge text-label-badge text-on-surface-variant uppercase">
+        Theater Tier UI
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script id="fanhub-working-interactions">
+   (function () {
+  const nav = (path) => {
+    const clean = path.startsWith('/') ? path : '/' + path;
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ type: 'fanhub:navigate', path: clean }, '*');
+    } else {
+      window.location.href = clean;
+    }
+  };
+
+  const bookmark = (id) => {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ type: 'fanhub:bookmark', id }, '*');
+    }
+  };
+
+  let toastTimer;
+  const toast = (message) => {
+    let box = document.getElementById('fanhub-toast');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'fanhub-toast';
+      box.style.cssText = 'position:fixed;right:20px;bottom:20px;z-index:9999;background:#2a2a2b;color:#fff;padding:12px 16px;border:1px solid #5e3f3b;border-radius:8px;font:600 12px Inter,Arial,sans-serif;box-shadow:0 10px 35px rgba(0,0,0,.35);opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none';
+      document.body.appendChild(box);
+    }
+    box.textContent = message;
+    box.style.opacity = '1';
+    box.style.transform = 'translateY(0)';
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      box.style.opacity = '0';
+      box.style.transform = 'translateY(8px)';
+    }, 1800);
+  };
+
+  const copyText = (text) => {
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    document.execCommand('copy');
+    area.remove();
+  };
+
+  const share = async (title, path = '') => {
+    let url = window.location.href;
+    try { if (window.parent && window.parent !== window) url = window.parent.location.origin + path; } catch {}
+    try {
+      if (navigator.share) await navigator.share({ title, url });
+      else { copyText(url); toast('Link copied'); }
+    } catch {
+      copyText(url);
+      toast('Link copied');
+    }
+  };
+
+  const exportCalendar = () => {
+    const ics = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//FanHub Plus//Events//EN',
+      'BEGIN:VEVENT',
+      'UID:fanhub-anime-expo@demo',
+      'DTSTART:20261108T100000',
+      'DTEND:20261108T180000',
+      'SUMMARY:FanHub Plus - Anime Expo Chibi & Cosplay Grand Prix',
+      'DESCRIPTION:FanHub Plus demo event',
+      'END:VEVENT',
+      'END:VCALENDAR'
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'fanhub-events.ics';
+    link.click();
+    URL.revokeObjectURL(url);
+    toast('Calendar exported');
+  };
+
+  const text = (element) => (element?.textContent || '').replace(/\s+/g, ' ').trim();
+
+  const footerRoutes = {
+    '/home': '/',
+    '/explore': '/explore',
+    '/trending': '/trending',
+    '/latest-archives': '/latest-archives',
+    '/spotlight-dossiers': '/spotlight-dossiers',
+    '/anime': '/anime',
+    '/gaming': '/gaming',
+    '/movies-tv': '/movies-and-tv',
+    '/k-pop': '/k-pop',
+    '/comics-manga': '/comics-and-manga',
+    '/cosplay': '/cosplay',
+    '/theater': '/theater',
+    '/audio-dispatch': '/audio-dispatch',
+    '/soundtrack-vault': '/soundtrack-vault',
+    '/4k-visual-galleries': '/visual-galleries',
+    '/user-ratings-index': '/ratings-index',
+    '/calendar-2025': '/events-calendar',
+    '/conventions-tracker': '/conventions-tracker',
+    '/theatrical-premieres': '/theatrical-premieres',
+    '/beta-launch-horizon': '/beta-launch-horizon',
+    '/cosplay-competitions': '/cosplay-competitions',
+    '/profile/@elena-vance': '/profile/elena-vance',
+    '/saved-bookmarks': '/bookmarks',
+    '/followed-fandoms': '/followed-fandoms',
+    '/custom-collections': '/custom-collections',
+    '/archivist-credentials': '/archivist-credentials',
+    '/admin-cms': '/admin',
+    '/content-moderation': '/content-moderation',
+    '/metadata-taxonomies': '/metadata-taxonomies',
+    '/api/v1/fandom-docs': '/api-docs',
+    '/security-audit-logs': '/security-audit-logs'
+  };
+
+  const articleRoutes = {
+    'Shadow Monarch Lineage & Monarch Wars Breakdown': '6ab99ef5a55fbdd61b86d3a3',
+    'Shadow of the Erdtree: Consort Radahn & Scadutree Scaling': '6ab9a173a55fbdd61b86d3a7',
+    'Aespa & NewJeans: Hyperpop Worldbuilding & Cyber Aesthetics': '6ab9a5cda55fbdd61b86d3ad',
+    'Dune Part Two: Landsraad Feuds & Sandworm Ecology': '6ab9a4a5a55fbdd61b86d3ab',
+    'Chainsaw Man: The Four Horsemen & Primal Fear Taxonomy': '6ab9a97722886b750374395a',
+    'Honkai Star Rail & Genshin: Electro Armor LED Rigging': '6ab9aad57f33437b971ea166'
+  };
+
+const characterRoutes = {
+  'Guts': '/character-archive/6ab9ac757f33437b971ea16a',
+  'Jinx (Powder)': '/character-archive/6ab9ac877f33437b971ea16c',
+  'Gojo Satoru': '/character-archive/6ab9ac9d7f33437b971ea16e',
+  'YoRHa No. 2 Type B': '/character-archive/6ab9acb57f33437b971ea170'
+};
+const merchRoutes = {
+  'Malenia Blade of Miquella': '/merch-showcase',
+  'Edgerunners OST 3xLP': '/merch-showcase',
+  'Militech Sandevistan 500': '/merch-showcase'
+};
+
+  const categoryOfArticle = (article) => {
+    const badge = text(article.querySelector('.absolute.top-3.left-3 span'));
+    if (badge.includes('Anime')) return 'Anime';
+    if (badge.includes('Gaming')) return 'Gaming';
+    if (badge.includes('K-Pop')) return 'K-Pop';
+    if (badge.includes('Cinema')) return 'Movies & TV';
+    if (badge.includes('Manga')) return 'Comics & Manga';
+    if (badge.includes('Cosplay')) return 'Cosplay';
+    return 'All Fandoms';
+  };
+
+  const articles = [...document.querySelectorAll('article')];
+  let currentCategory = 'All Fandoms';
+  let currentSearch = '';
+
+  const applyArticleFilters = () => {
+    let visible = 0;
+    articles.forEach((article) => {
+      const categoryMatch = currentCategory === 'All Fandoms' || categoryOfArticle(article) === currentCategory;
+      const searchMatch = !currentSearch || text(article).toLowerCase().includes(currentSearch);
+      const show = categoryMatch && searchMatch;
+      article.style.display = show ? '' : 'none';
+      if (show) visible += 1;
+    });
+    [...document.querySelectorAll('span')].forEach((span) => {
+      if (text(span).startsWith('Displaying ') && text(span).includes('active nodes')) {
+        span.textContent = `Displaying ${visible} of 649 active nodes`;
+      }
+    });
+  };
+
+  const setupRoutes = () => {
+    const profile = document.querySelector('img[alt="Profile"]');
+    if (profile) {
+      profile.dataset.path = '/profile/elena-vance';
+      profile.style.cursor = 'pointer';
+      profile.setAttribute('tabindex', '0');
+    }
+
+    const heroTitle = [...document.querySelectorAll('h2')].find((h) => text(h).includes('Night City Overdrive'));
+    if (heroTitle) {
+      heroTitle.dataset.path = '/details/6ab937457dfb761cd9dd1c7c';
+      heroTitle.style.cursor = 'pointer';
+      const heroGrid = heroTitle.closest('.grid');
+      const poster = heroGrid?.querySelector('.lg\\:col-span-7');
+      if (poster) { poster.dataset.path = '/details/6ab937457dfb761cd9dd1c7c'; poster.style.cursor = 'pointer'; }
+    }
+
+    articles.forEach((article) => {
+      const title = text(article.querySelector('h4'));
+      const id = articleRoutes[title];
+      if (!id) return;
+      article.dataset.path = '/details/' + id;
+      article.dataset.itemId = id;
+      article.style.cursor = 'pointer';
+    });
+
+    Object.entries(characterRoutes).forEach(([name, path]) => {
+      const heading = [...document.querySelectorAll('h4')].find((h) => text(h) === name);
+      const card = heading?.closest('div.p-4.rounded-lg');
+      if (card) { card.dataset.path = path; card.style.cursor = 'pointer'; }
+    });
+
+    Object.entries(merchRoutes).forEach(([name, path]) => {
+      const heading = [...document.querySelectorAll('h4')].find((h) => text(h) === name);
+      const card = heading?.closest('div.rounded-lg');
+      if (card) { card.dataset.path = path; card.style.cursor = 'pointer'; }
+    });
+
+    const heroLink = [...document.querySelectorAll('a')].find((a) => text(a).includes('Enter Archive Node'));
+    if (heroLink) heroLink.dataset.path = '/details/6ab937457dfb761cd9dd1c7c';
+
+    const fullCalendar = [...document.querySelectorAll('a')].find((a) => text(a).includes('Full 2025 Calendar'));
+    if (fullCalendar) fullCalendar.dataset.path = '/events-calendar';
+
+    [...document.querySelectorAll('h4')].forEach((heading) => {
+      const label = text(heading);
+      if (label.includes('Bleach: Thousand-Year Blood War')) {
+        const panel = heading.closest('.lg\\:col-span-8');
+        const video = panel?.querySelector('.aspect-video');
+        if (video) { video.dataset.path = '/theater'; video.style.cursor = 'pointer'; }
+      }
+      if (label.includes("The Architecture of Souls")) {
+        heading.dataset.path = '/audio-dispatch';
+        heading.style.cursor = 'pointer';
+      }
+      if (label.includes('Chainsaw Man: Reze Arc') || label.includes('Anime Expo Chibi') || label.includes('Monster Hunter Wilds')) {
+        const card = heading.closest('div.rounded-lg');
+        if (card) { card.dataset.path = '/events-calendar'; card.style.cursor = 'pointer'; }
+      }
+    });
+
+    [...document.querySelectorAll('span')].forEach((span) => {
+      const label = text(span);
+      const routes = [
+        ['#1 Anime', '/anime'], ['#2 Gaming', '/gaming'], ['#3 Cinema', '/movies-and-tv'],
+        ['#4 K-Pop', '/k-pop'], ['#5 Comics', '/comics-and-manga'], ['#6 Cosplay', '/cosplay']
+      ];
+      const match = routes.find(([name]) => label.includes(name) && label.length < 120);
+      if (match) { span.dataset.path = match[1]; span.style.cursor = 'pointer'; }
+    });
+
+    [...document.querySelectorAll('div')].forEach((div) => {
+      const label = text(div);
+      if (label === '6 Fandoms') { div.dataset.path = '/followed-fandoms'; div.style.cursor = 'pointer'; }
+      if (label === '24 Bookmarks') { div.dataset.path = '/bookmarks'; div.style.cursor = 'pointer'; }
+      if (label === '12 Events') { div.dataset.path = '/events-calendar'; div.style.cursor = 'pointer'; }
+    });
+  };
+
+  setupRoutes();
+
+  const headerSearch = document.querySelector('input[placeholder="Search universes, characters..."]');
+  const dossierSearch = document.querySelector('input[placeholder^="Search across 649"]');
+
+  headerSearch?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' && headerSearch.value.trim()) nav('/search?q=' + encodeURIComponent(headerSearch.value.trim()));
+  });
+
+  dossierSearch?.addEventListener('input', () => {
+    currentSearch = dossierSearch.value.trim().toLowerCase();
+    applyArticleFilters();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      headerSearch?.focus();
+    }
+  });
+
+  document.querySelectorAll('select').forEach((select) => {
+    select.addEventListener('change', () => toast(select.options[select.selectedIndex].text + ' applied'));
+  });
+
+  document.addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    const anchor = event.target.closest('a');
+    const routeTarget = event.target.closest('[data-path]');
+
+    if (button) {
+      const label = text(button);
+      const title = (button.getAttribute('title') || '').toLowerCase();
+      const icon = text(button.querySelector('.material-symbols-outlined'));
+
+      if (title.includes('bookmark')) {
+        const article = button.closest('article');
+        if (article?.dataset.itemId) bookmark(article.dataset.itemId);
+        return;
+      }
+
+      if (title.includes('quick save')) {
+        event.preventDefault();
+        const iconNode = button.querySelector('.material-symbols-outlined');
+        if (iconNode) iconNode.textContent = iconNode.textContent.includes('add') ? 'bookmark_added' : 'bookmark_add';
+        bookmark('6ab937457dfb761cd9dd1c7c');
+        toast('Quick save updated');
+        return;
+      }
+
+      if (title.includes('share') || label.includes('Dispatch File')) {
+        event.preventDefault();
+        const article = button.closest('article');
+        const id = article?.dataset.itemId;
+        share(text(article?.querySelector('h4')) || 'FanHub Plus', id ? '/details/' + id : '/details/6ab937457dfb761cd9dd1c7c');
+        return;
+      }
+
+      if (label.includes('AI Guide')) { event.preventDefault(); nav('/ai-guide'); return; }
+      if ((button.getAttribute('aria-label') || '').includes('Saved Bookmarks')) { event.preventDefault(); nav('/bookmarks'); return; }
+      if ((button.getAttribute('aria-label') || '').includes('Notifications')) { event.preventDefault(); nav('/notifications'); return; }
+
+      if (label.includes('Sync Feeds')) {
+        event.preventDefault();
+        const span = [...button.querySelectorAll('span')].find((s) => text(s).includes('Sync Feeds'));
+        if (span) { span.textContent = 'Feeds Synced'; setTimeout(() => span.textContent = 'Sync Feeds', 1800); }
+        toast('All feeds synchronized');
+        return;
+      }
+
+      if (label.includes('Play 4K Trailer Stream')) { event.preventDefault(); nav('/theater'); return; }
+
+      const filterName = ['All Fandoms', 'Anime', 'Gaming', 'Movies & TV', 'K-Pop', 'Comics & Manga', 'Cosplay'].find((name) => label.startsWith(name));
+      if (filterName && button.closest('section')) {
+        event.preventDefault();
+        currentCategory = filterName;
+        applyArticleFilters();
+        toast(filterName + ' filter applied');
+        return;
+      }
+
+      if (icon === 'grid_view') {
+        event.preventDefault();
+        const grid = articles[0]?.parentElement;
+        if (grid) {
+          const list = grid.dataset.layout === 'list';
+          grid.dataset.layout = list ? 'grid' : 'list';
+          grid.style.gridTemplateColumns = list ? '' : '1fr';
+          toast(list ? 'Grid view restored' : 'List view enabled');
+        }
+        return;
+      }
+
+      if (label.includes('Explore All 1,420 Figures')) { event.preventDefault(); nav('/character-archive'); return; }
+
+      if (label.includes('View Character Archive')) {
+        event.preventDefault();
+        const card = button.closest('div.p-4.rounded-lg');
+        const name = text(card?.querySelector('h4'));
+        nav(characterRoutes[name] || '/character-archive');
+        return;
+      }
+
+      if (label.includes('Open Full Audio Archive')) { event.preventDefault(); nav('/audio-dispatch'); return; }
+      if (label.includes('Export iCal')) { event.preventDefault(); exportCalendar(); return; }
+      if (label.includes('Explore 480 Vault Items')) { event.preventDefault(); nav('/merch-showcase'); return; }
+
+      if (icon === 'notification_add' || icon === 'notifications_active') {
+        event.preventDefault();
+        const node = button.querySelector('.material-symbols-outlined');
+        if (node) node.textContent = icon === 'notification_add' ? 'notifications_active' : 'notification_add';
+        toast(icon === 'notification_add' ? 'Event reminder added' : 'Event reminder removed');
+        return;
+      }
+
+      if (icon === 'info') {
+        event.preventDefault();
+        const card = button.closest('div.rounded-lg');
+        const name = text(card?.querySelector('h4'));
+        nav(merchRoutes[name] || '/merch-showcase');
+        return;
+      }
+
+      if (['play_arrow', 'pause'].includes(icon)) {
+        event.preventDefault();
+        const node = button.querySelector('.material-symbols-outlined');
+        if (node) node.textContent = icon === 'play_arrow' ? 'pause' : 'play_arrow';
+        toast(icon === 'play_arrow' ? 'Playback started' : 'Playback paused');
+        return;
+      }
+
+      if (['volume_up', 'volume_off'].includes(icon)) {
+        event.preventDefault();
+        const node = button.querySelector('.material-symbols-outlined');
+        if (node) node.textContent = icon === 'volume_up' ? 'volume_off' : 'volume_up';
+        toast(icon === 'volume_up' ? 'Audio muted' : 'Audio enabled');
+        return;
+      }
+
+      if (icon === 'closed_caption') { event.preventDefault(); button.classList.toggle('text-primary-container'); toast('Captions toggled'); return; }
+      if (icon === 'settings') { event.preventDefault(); toast('Player settings ready'); return; }
+      if (icon === 'replay_10') { event.preventDefault(); toast('Rewound 10 seconds'); return; }
+      if (icon === 'forward_30') { event.preventDefault(); toast('Skipped forward 30 seconds'); return; }
+      if (icon === 'fullscreen') {
+        event.preventDefault();
+        const player = button.closest('.aspect-video');
+        if (player?.requestFullscreen) player.requestFullscreen();
+        return;
+      }
+    }
+
+    if (anchor) {
+      const label = text(anchor);
+      if (label.includes('Full 2025 Calendar')) { event.preventDefault(); nav('/events-calendar'); return; }
+      if (label === 'API Protocol') { event.preventDefault(); nav('/api-protocol'); return; }
+      if (label === 'Creator Licensing') { event.preventDefault(); nav('/creator-licensing'); return; }
+      if (label.startsWith('/')) {
+        const key = label.split(' ')[0];
+        const route = footerRoutes[key];
+        if (route) { event.preventDefault(); nav(route); return; }
+      }
+    }
+
+    if (event.target.closest('input,select,textarea,label')) return;
+
+    if (routeTarget?.dataset.path) {
+      event.preventDefault();
+      event.stopPropagation();
+      nav(routeTarget.dataset.path);
+    }
+  }, true);
+
+  const ratingStars = [...document.querySelectorAll('.material-symbols-outlined')].filter((node) => text(node).startsWith('star'));
+  ratingStars.forEach((star) => {
+    const parent = star.parentElement;
+    if (!parent || parent.closest('button')) return;
+    star.style.cursor = 'pointer';
+    star.addEventListener('click', () => toast('Rating saved'));
+  });
+})();
+  </script>
+  <script id="fanhub-final-motion">
+   (() => {
+  const targets = document.querySelectorAll('main > section, main > div > section, footer');
+  const observer = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
+    entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('fh-visible'); observer.unobserve(entry.target); } });
+  }, { threshold: .08 }) : null;
+  targets.forEach((node, index) => {
+    node.classList.add('fh-reveal');
+    node.style.transitionDelay = Math.min(index, 5) * 35 + 'ms';
+    if (observer) observer.observe(node); else node.classList.add('fh-visible');
+  });
+  const top = document.createElement('button');
+  top.id = 'fh-back-top';
+  top.type = 'button';
+  top.setAttribute('aria-label', 'Back to top');
+  top.innerHTML = '<span class="material-symbols-outlined">arrow_upward</span>';
+  top.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.body.appendChild(top);
+  const syncTop = () => top.classList.toggle('fh-show', window.scrollY > 650);
+  window.addEventListener('scroll', syncTop, { passive: true });
+  syncTop();
+})();
+  </script>
+ </body>
+</html>
